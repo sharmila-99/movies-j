@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .music-player {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .playlist {
+            margin: 20px;
+        }
+
+        input[type="search"], input[type="submit"] {
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#trending">Trending Songs</a>
+            <a href="#search">Search</a>
+        </nav>
+    </header>
+
+    <div id="home">
+        <h1>Welcome to our Music Streaming Service!</h1>
+    </div>
+
+    <div class="music-player">
+        <audio controls>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div id="trending" class="playlist">
+        <h2>Top Trending Songs</h2>
+        <ul>
+            <li>Song 1</li>
+            <li>Song 2</li>
+            <li>Song 3</li>
+            <li>Song 4</li>
+            <li>Song 5</li>
+        </ul>
+    </div>
+
+    <div id="search" class="playlist">
+        <h2>Search for Songs</h2>
+        <form>
+            <input type="search" placeholder="Search for songs...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2021 Music Streaming Service
+    </footer>
+
+    <script>
+        // Additional JavaScript for music player functionality can be added here
+    </script>
+</body>
+
+</html>
